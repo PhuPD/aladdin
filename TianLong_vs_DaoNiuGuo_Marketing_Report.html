@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tian Long vs Dao Niu Guo — Báo Cáo Marketing Final</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --tl: #9B1C1C; --tl-light: #FDF2F2; --tl-mid: #C0392B; --tl-gold: #D4A843;
+  --dng: #1E3A5F; --dng-light: #EEF4FB; --dng-mid: #2563A0; --dng-blue: #7BAFD4;
+  --ink: #141414; --ink-2: #3A3A3A; --ink-3: #6B6B6B; --ink-4: #A8A8A8;
+  --border: #E4E1DA; --bg: #FAF9F7; --white: #FFFFFF;
+  --green: #166534; --green-bg: #F0FDF4;
+  --amber: #92400E; --amber-bg: #FFFBEB;
+  --red: #7F1D1D; --red-bg: #FEF2F2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink-2);font-size:14px;line-height:1.7}
+.cover{background:var(--ink);color:#fff;padding:60px 48px 52px;position:relative;overflow:hidden}
+.cover::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(155,28,28,.35) 0%,transparent 65%);pointer-events:none}
+.cover::after{content:'';position:absolute;bottom:-60px;left:60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(30,58,95,.3) 0%,transparent 65%);pointer-events:none}
+.cover-chip{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px}
+.cover-hl{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;line-height:1.1;margin-bottom:4px}
+.cover-hl .tl{color:var(--tl-gold)}
+.cover-hl .vs{font-size:30px;font-weight:400;color:rgba(255,255,255,.25);margin:0 12px}
+.cover-hl .dng{color:var(--dng-blue)}
+.cover-sub-title{font-size:17px;color:rgba(255,255,255,.45);margin-top:6px;font-weight:300}
+.cover-desc{max-width:540px;font-size:14px;color:rgba(255,255,255,.55);margin-top:18px;line-height:1.65}
+.cover-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.cover-tag{font-family:'DM Mono',monospace;font-size:10px;padding:4px 11px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);letter-spacing:.05em}
+.wrap{max-width:920px;margin:0 auto;padding:0 36px}
+.sec{padding:48px 0 36px;border-bottom:1px solid var(--border)}
+.sec:last-child{border-bottom:none}
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:5px}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.sec-desc{font-size:13px;color:var(--ink-3);max-width:640px;line-height:1.65;margin-bottom:24px}
+.sub-title{font-size:14px;font-weight:600;color:var(--ink);margin:24px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.sub-title-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-4)}
+.alert{border-left:3px solid;padding:14px 18px;margin:16px 0;border-radius:0 6px 6px 0}
+.alert.green{border-color:#16a34a;background:var(--green-bg)}
+.alert.amber{border-color:#d97706;background:var(--amber-bg)}
+.alert.red{border-color:#dc2626;background:var(--red-bg)}
+.alert.dark{border-left:none;background:var(--ink);padding:20px 24px;border-radius:4px;margin:22px 0}
+.alert-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.alert.green .alert-label{color:#16a34a}
+.alert.amber .alert-label{color:#d97706}
+.alert.red .alert-label{color:#dc2626}
+.alert.dark .alert-label{color:rgba(255,255,255,.3)}
+.alert p{font-size:13.5px;line-height:1.65}
+.alert.dark p{color:rgba(255,255,255,.82)}
+.alert.dark p strong{color:var(--tl-gold)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px}
+.cmp-card{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--white)}
+.cmp-head{padding:10px 14px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;font-weight:500}
+.cmp-head.tl{background:var(--tl);color:rgba(255,255,255,.95)}
+.cmp-head.dng{background:var(--dng);color:rgba(255,255,255,.95)}
+.cmp-body{padding:13px 15px;font-size:12.8px;line-height:1.6;color:var(--ink-2)}
+.cmp-body ul{list-style:none;padding:0}
+.cmp-body li{padding-left:14px;position:relative;margin-bottom:6px}
+.cmp-body li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%}
+.cmp-body.tl li::before{background:var(--tl-mid)}
+.cmp-body.dng li::before{background:var(--dng-mid)}
+.cmp-body li:last-child{margin-bottom:0}
+.cmp-body strong{color:var(--ink);font-weight:600}
+.cmp-body em{font-style:italic;color:var(--ink-3)}
+.analysis{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:8px 0 18px;font-size:13px;color:var(--ink-2);line-height:1.65}
+.analysis-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-4);margin-bottom:6px;display:flex;align-items:center;gap:5px}
+.analysis-label::before{content:'';width:14px;height:1px;background:var(--ink-4)}
+.analysis p{margin-bottom:6px}
+.analysis p:last-child{margin-bottom:0}
+.analysis strong{color:var(--ink);font-weight:600}
+.st{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:500}
+.st-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.st.good .st-dot{background:#16a34a}.st.good{color:#166534}
+.st.mid .st-dot{background:#d97706}.st.mid{color:#92400E}
+.st.bad .st-dot{background:#dc2626}.st.bad{color:#7F1D1D}
+.pill{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:3px;margin:1px}
+.pill-red{background:var(--red-bg);color:var(--red)}
+.pill-amber{background:var(--amber-bg);color:var(--amber)}
+.pill-green{background:var(--green-bg);color:var(--green)}
+.score-wrap{border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:24px 0}
+.score-head{display:grid;grid-template-columns:1fr 120px 1fr}
+.score-head-tl{background:var(--tl);padding:12px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85);text-align:right}
+.score-head-center{background:var(--ink);padding:12px 8px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;color:rgba(255,255,255,.3);text-align:center;display:flex;align-items:center;justify-content:center}
+.score-head-dng{background:var(--dng);padding:12px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.score-row{display:grid;grid-template-columns:1fr 120px 1fr;border-top:1px solid var(--border)}
+.score-tl{background:rgba(155,28,28,.03);padding:14px 16px;display:flex;align-items:center;justify-content:flex-end;gap:10px;border-right:1px solid var(--border)}
+.score-dng{background:rgba(30,58,95,.03);padding:14px 16px;display:flex;align-items:center;gap:10px;border-left:1px solid var(--border)}
+.score-mid{padding:14px 8px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-3);line-height:1.3}
+.score-num{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700}
+.score-num.tl{color:var(--tl)}
+.score-num.dng{color:var(--dng-mid)}
+.score-bar{height:6px;border-radius:3px;flex:1}
+.score-bar.tl{background:var(--tl);opacity:.6}
+.score-bar.dng{background:var(--dng-mid);opacity:.6}
+.win-flag{font-size:9px;font-family:'DM Mono',monospace;padding:2px 6px;border-radius:2px}
+.win-flag.tl-w{background:var(--tl-light);color:var(--tl)}
+.win-flag.dng-w{background:var(--dng-light);color:var(--dng)}
+.win-flag.tie{background:#F0EDE6;color:#777}
+.final{background:var(--ink);padding:52px 48px;color:#fff}
+.final-grid{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:center;margin:28px 0}
+.final-brand{text-align:center}
+.final-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.final-label.tl{color:var(--tl-gold)}
+.final-label.dng{color:var(--dng-blue)}
+.final-big{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:700;line-height:1}
+.final-big.tl{color:var(--tl-gold)}
+.final-big.dng{color:var(--dng-blue)}
+.final-of{font-size:12px;color:rgba(255,255,255,.3);margin-top:4px}
+.final-wins{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-top:12px}
+.fw{font-size:10px;font-family:'DM Mono',monospace;padding:3px 7px;border-radius:2px}
+.fw.tw{background:rgba(155,28,28,.5);color:var(--tl-gold)}
+.fw.dw{background:rgba(30,58,95,.5);color:var(--dng-blue)}
+.fw.tt{background:rgba(255,255,255,.07);color:rgba(255,255,255,.35)}
+.final-vs{text-align:center;font-family:'Cormorant Garamond',serif;font-size:32px;color:rgba(255,255,255,.15)}
+.final-note{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding-top:28px;margin-top:4px;font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;max-width:620px;margin-left:auto;margin-right:auto}
+.final-note strong{color:var(--tl-gold)}
+.cl-group{margin:22px 0 28px}
+.cl-group-title{font-size:13px;font-weight:600;color:var(--ink);padding:8px 0;border-bottom:1.5px solid var(--border);margin-bottom:2px;display:flex;align-items:center;gap:8px}
+.cl-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+.cl-item:last-child{border-bottom:none}
+.cb{width:17px;height:17px;border:1.5px solid var(--border);border-radius:3px;flex-shrink:0;margin-top:2px}
+.cl-body{flex:1}
+.cl-action{font-size:13.5px;color:var(--ink);font-weight:500;line-height:1.4}
+.cl-detail{font-size:12.5px;color:var(--ink-3);margin-top:3px;line-height:1.55}
+.cl-meta{margin-top:5px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.p-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.07em;padding:2px 7px;border-radius:2px;text-transform:uppercase}
+.p1{background:var(--red-bg);color:var(--red)}
+.p2{background:var(--amber-bg);color:var(--amber)}
+.p3{background:var(--green-bg);color:var(--green)}
+.cl-who{font-size:11px;font-family:'DM Mono',monospace;color:var(--ink-4)}
+.toc{background:var(--white);border:1px solid var(--border);padding:22px 26px;margin:28px 0}
+.toc-t{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-4);margin-bottom:12px}
+.toc-row{display:flex;align-items:baseline;gap:8px;padding:5px 0;border-bottom:.5px solid var(--border);font-size:13px;color:var(--ink-2)}
+.toc-row:last-child{border-bottom:none}
+.toc-n{font-family:'DM Mono',monospace;font-size:10px;color:var(--ink-4);width:22px;flex-shrink:0}
+@media(max-width:640px){
+  .cover{padding:36px 20px}.cover-hl{font-size:32px}.cover-hl .vs{font-size:22px}
+  .wrap{padding:0 18px}.sec-title{font-size:24px}
+  .score-wrap .score-num{font-size:22px}
+  .cmp{grid-template-columns:1fr}.final{padding:36px 20px}
+  .final-big{font-size:54px}.final-grid{grid-template-columns:1fr 40px 1fr}
+  .score-head,.score-row{grid-template-columns:1fr 90px 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-chip">Aladdin JSC · Marketing Intelligence · Tháng 5 / 2026 · Final Version</div>
+  <div class="cover-hl">
+    <span class="tl">Tian Long</span><span class="vs">vs</span><span class="dng">Dao Niu Guo</span>
+  </div>
+  <div class="cover-sub-title">Báo Cáo Đánh Giá Hiện Trạng Marketing & Kế Hoạch Hành Động</div>
+  <div class="cover-desc">So sánh chi tiết theo dữ liệu thực tế: Brand Positioning &amp; Experience · Chương trình ưu đãi · Content · Kênh Social. Kèm Checklist hành động ưu tiên để Tian Long chiếm ưu thế tuyệt đối.</div>
+  <div class="cover-tags">
+    <span class="cover-tag">Brand Positioning</span>
+    <span class="cover-tag">Brand Experience</span>
+    <span class="cover-tag">Ưu đãi</span>
+    <span class="cover-tag">Content</span>
+    <span class="cover-tag">Kênh Social</span>
+    <span class="cover-tag">Next Actions</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="toc">
+    <div class="toc-t">Mục lục</div>
+    <div class="toc-row"><span class="toc-n">01</span>Định vị thương hiệu &amp; Brand Experience</div>
+    <div class="toc-row"><span class="toc-n">02</span>Chương trình ưu đãi (Promotions)</div>
+    <div class="toc-row"><span class="toc-n">03</span>Chiến lược Content</div>
+    <div class="toc-row"><span class="toc-n">04</span>Hệ thống Kênh Social &amp; Booking</div>
+    <div class="toc-row"><span class="toc-n">05</span>Bảng điểm tổng hợp</div>
+    <div class="toc-row"><span class="toc-n">06</span>Next Actions để vượt trội Dao Niu Guo</div>
+  </div>
+
+  <!-- 01 BRAND POSITIONING & EXPERIENCE -->
+  <div class="sec">
+    <div class="eyebrow">01 · Brand Positioning &amp; Experience</div>
+    <div class="sec-title">Định Vị Thương Hiệu &amp; Trải Nghiệm Khách Hàng</div>
+    <div class="sec-desc">Hai brand cùng claim "lẩu bò tươi Triều Châu" nhưng đứng ở hai tầng định vị khác nhau — và mang lại hai loại trải nghiệm rất khác nhau tại điểm bán.</div>
+
+    <div class="sub-title"><span class="sub-title-num">1.1</span>Thông điệp cốt lõi &amp; Định vị</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Tagline: <strong>"Ăn Tươi Sống Sành"</strong></li>
+            <li>Định vị: Lẩu bò Triều Châu — <strong>đánh thức Gu Sành</strong>, nhắm vào identity "tôi là người biết chọn"</li>
+            <li>Sản phẩm trung tâm: <strong>"thịt bò tươi thái tay tại quầy"</strong> — bếp mở để khách chứng kiến quy trình</li>
+            <li>Storytelling sâu: 10 năm nghiên cứu, thảo mộc Đông y, món thủ công</li>
+            <li>Hình ảnh: premium, sạch sẽ, bài trí nghệ thuật, tone đỏ brand</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Tagline: <strong>Không rõ ràng. Cụm lặp lại là "Bò tươi trong ngày, Thái tay tuyệt đỉnh"</strong></li>
+            <li>Định vị: Casual dining thân thiện, dễ tiếp cận — <strong>vui &amp; trẻ trung</strong></li>
+            <li>Cam kết chất lượng thịt tươi <strong>"vượt tiêu chuẩn thị trường"</strong>, nhập trong ngày, thái tại quầy</li>
+            <li>Storytelling: "2 năm nghiên cứu, 5 tạ trứng muối", "chỉ lấy 60kg ngon nhất/con bò"</li>
+            <li>Hình ảnh: tone đỏ hotpot truyền thống + ánh đèn neon hiện đại (vibe Hồng Kông/Triều Châu)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis">
+      <div class="analysis-label">Phân tích</div>
+      <p><strong>TL chuyên nghiệp, cao cấp, storytelling sâu — DNG gần gũi, thực tế, mạnh yếu tố đu trend.</strong> Tian Long nhất quán với thông điệp "100% thịt bò tươi thượng hạng" và trải nghiệm quầy bếp mở tạo niềm tin xuyên suốt. Thông điệp "Chuỗi Lẩu bò tươi triều châu lớn nhất VN" được duy trì đều đặn. Campaign so sánh Tian Long - HDL gây được tiếng vang và ghim được tên thương hiệu gắn với key bò tươi - đối trọng so sánh với HDL.</p>
+      <p>DNG có <strong>yếu tố đu trend mạnh để dễ lan toả organic trên TikTok/Instagram hơn</strong>. Nội dung DNG dám khẳng định chất lượng "vượt tiêu chuẩn thị trường" — táo bạo hơn TL ở khẳng định public.</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">1.2</span>Brand Experience — Trải nghiệm tại điểm bán</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Quầy bếp mở</strong> — đầu bếp thái thịt tại quầy, khách chứng kiến quy trình</li>
+            <li>Test "đĩa bò úp ngược không rơi" — bằng chứng độ tươi visible</li>
+            <li>Quầy gia vị/tráng miệng <strong>miễn phí</strong></li>
+            <li>Băng sa tặng giữa bữa ăn (touch chu đáo)</li>
+            <li>Decor sinh nhật miễn phí cho thành viên</li>
+            <li>Không gian Triều Châu sang trọng, premium</li>
+            <li><span class="st mid"><span class="st-dot"></span>Vibe: chuyên nghiệp, uy tín, "sạch – tươi – tốt"</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Bếp mở + đầu bếp thái thịt tại quầy (tương tự TL)</li>
+            <li><strong>Gamification mạnh</strong>: ném phi tiêu trúng đĩa bò, bốc thăm may mắn, oẳn tù tì với nhân viên</li>
+            <li><strong>"Trai 6 múi" nhúng bò cho khách</strong> tại CN Lê Đức Thọ — entertainment factor cao</li>
+            <li>Múa cổ trang tại nhà hàng</li>
+            <li>Há cảo nặn tại bàn (khách gọi mới nặn) — trải nghiệm sống</li>
+            <li>Không gian Trung Hoa mộc mạc + đèn neon hiện đại, vui</li>
+            <li><span class="st good"><span class="st-dot"></span>Vibe: vui nhộn, hot, dễ tạo content viral organic</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis">
+      <div class="analysis-label">Phân tích</div>
+      <p><strong>DNG có lợi thế lớn về tính giải trí và viral organic tại điểm bán.</strong> Mỗi yếu tố tại nhà hàng DNG (phi tiêu, trai đẹp nhúng bò, oẳn tù tì, há cảo nặn tại bàn) đều là <em>"content sẵn"</em> khách quay rồi đăng lên MXH một cách tự nhiên.</p>
+      <p>Tian Long mạnh ở chiều <strong>uy tín, niềm tin, chiều sâu</strong> — nhưng yếu ở khả năng kích hoạt khách tự tạo content. Trải nghiệm TL "đẹp để xem" nhưng <em>"không có gì bất ngờ để kể"</em>. Đây là điểm cần khắc phục mà không phá vỡ tone premium của brand.</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">1.3</span>Vibe chung &amp; Tệp khách hàng</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Hình ảnh chuyên nghiệp, sang trọng, uy tín</li>
+            <li>Định vị: <strong>"Ăn tươi sống sành", value for money</strong></li>
+            <li>Tập trung câu chuyện chất lượng &amp; sức khỏe → "sạch – tươi – tốt"</li>
+            <li>Target: <strong>khách công sở/gia đình thu nhập trung cao</strong>, quan tâm chất lượng</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Casual dining gần gũi, vibe Trung Hoa mộc mạc nhưng hiện đại</li>
+            <li>Định vị: <strong>"Chọn tươi – Ăn chất"</strong>, vui &amp; nhiều hoạt động</li>
+            <li>Hậu thuẫn mạnh từ Golden Gate</li>
+            <li>Target: <strong>gia đình/văn phòng + giới trẻ mê đu trend</strong> — phổ rộng hơn TL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert green">
+      <div class="alert-label">✦ Kết luận Brand Positioning &amp; Experience</div>
+      <p><strong>Tian Long thắng về chiều sâu định vị — Dao Niu Guo thắng về độ thu hút bề mặt và tiềm năng viral.</strong> Tian Long không cần copy gamification kiểu DNG, nhưng cần bổ sung <em>"khoảnh khắc đáng quay"</em> vào trải nghiệm — vẫn giữ tone Gu Sành nhưng có yếu tố show off, có chi tiết surprise.</p>
+    </div>
+  </div>
+
+  <!-- 02 PROMOTIONS -->
+  <div class="sec">
+    <div class="eyebrow">02 · Chương trình ưu đãi</div>
+    <div class="sec-title">Chương Trình Ưu Đãi (Promotions)</div>
+    <div class="sec-desc">So sánh chi tiết các dạng ưu đãi đang triển khai, hình thức kích hoạt và mức độ hiệu quả tại điểm bán.</div>
+
+    <div class="sub-title"><span class="sub-title-num">2.1</span>Dạng khuyến mại đang triển khai</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Chiết khấu % trên combo cố định 2–4 người: <strong>30% Dưỡng Sắc, Tâm Giao, 37% Hạ Thanh</strong></li>
+            <li>Tặng <strong>"1 mét bò tươi"</strong> (~299k) cho nhóm 4+ đặt bàn trước</li>
+            <li>Menu thịt tươi <strong>99k</strong> cho nhóm 2+ đặt bàn trước</li>
+            <li>Decor sinh nhật miễn phí</li>
+            <li><strong>Ngày hội thành viên</strong>: giảm 15% toàn menu mỗi thứ 3 hàng tuần</li>
+            <li>Quầy gia vị/tráng miệng <strong>miễn phí</strong></li>
+            <li>Ưu đãi riêng cho Bạc/Vàng/Kim Cương</li>
+            <li>Voucher <strong>-200k</strong> cho hóa đơn từ 1 triệu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Tặng Combo TAM PHẨM 199K cho nhóm 5+ khi <strong>check-in FB/Google Maps</strong> (daily)</li>
+            <li><strong>Ném phi tiêu trúng đĩa bò trúng phần nào tặng phần đó</strong> (~119k/đĩa, 1 lượt/nhóm 3 khách)</li>
+            <li>Decor sinh nhật miễn phí</li>
+            <li>Combo trưa hấp dẫn từ <strong>166K, 233k, 279k/người</strong></li>
+            <li>Lì xì Tết: tặng bò/nước lẩu/há cảo</li>
+            <li>Bốc thăm khai xuân cho bàn 4+: chè, lõi vai tươi, há cảo, xiên nướng...</li>
+            <li>Đoàn 8–14: <strong>10%</strong>, 15–20: <strong>12%</strong>, 21+: <strong>15%</strong> off</li>
+            <li>Đặt bàn trước nhóm 5+: 10%, nhóm 10+: 15%</li>
+            <li><strong>Chồng coupon Golden Gate</strong> + CTKM của NH</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis">
+      <div class="analysis-label">Phân tích</div>
+      <p><strong>TL: ưu đãi giá trị cao, hướng giảm rào cản chi phí + giữ chân khách thân thiết.</strong> "1 mét bò" và combo 30–37% off mang giá trị cảm nhận lớn, phù hợp gia đình/công sở chi tiêu nhiều.</p>
+      <p><strong>DNG: gamification + trải nghiệm tại điểm bán.</strong> Ném phi tiêu, bốc thăm tạo bầu không khí vui, dễ tương tác và chia sẻ MXH — lôi kéo tập khách trẻ và gia đình có con nhỏ tốt hơn TL. Ngoài ra, DNG được hưởng lợi từ <strong>chồng coupon hệ thống Golden Gate</strong>.</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">2.2</span>Hình thức triển khai</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Truyền thống &amp; tiện ích</strong>, chú trọng KH thân thiết</li>
+            <li>Đặt bàn trước qua Hotline/Fanpage nhận ưu đãi</li>
+            <li>Mã KH đăng ký thành viên có sẵn trên app</li>
+            <li><em>Trước đây có game "Vòng quay bò tươi" — đã bỏ</em></li>
+            <li>Liên kết VPBank, Grab… tặng voucher</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Gamification &amp; trải nghiệm trực tiếp</strong>: phi tiêu, bốc thăm, oẳn tù tì với nhân viên</li>
+            <li>Game hóa vui nhộn, phù hợp nhóm đông — <strong>bàn càng đông tặng càng nhiều</strong></li>
+            <li>Đặt bàn trước qua page/hotline nhận ưu đãi (giống TL)</li>
+            <li><strong>Tích hợp ưu đãi qua Golden SpoonS + ví GotIt</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert amber">
+      <div class="alert-label">⚠ Nhận định — Tian Long thua ở hình thức triển khai</div>
+      <p><strong>Trải nghiệm gamification là thứ tạo content viral organic mạnh nhất tại điểm bán</strong>. DNG đang chiếm trọn lãnh thổ này. Cần thiết kế lại gamification nhưng <strong>theo tone "Gu Sành"</strong> — không copy phi tiêu/oẳn tù tì, mà tạo ritual có chiều sâu hơn (ví dụ: thử test gu, blind taste, bốc thăm trải nghiệm cao cấp).</p>
+    </div>
+  </div>
+
+  <!-- 03 CONTENT -->
+  <div class="sec">
+    <div class="eyebrow">03 · Content</div>
+    <div class="sec-title">Chiến Lược Content</div>
+    <div class="sec-desc">Phân tích chi tiết từng tuyến content: viral, storytelling, educate, tranh luận, hình ảnh và vibe chung.</div>
+
+    <div class="sub-title"><span class="sub-title-num">3.1</span>Hình ảnh món ăn &amp; thương hiệu</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Ảnh bò tươi dựng, xoay, úp ngược không rơi</strong> — chứng minh độ tươi</li>
+            <li>Quầy bếp mở, đầu bếp thái thịt tại quầy</li>
+            <li>KOC thưởng thức sản phẩm, bộ ảnh concept theo mùa/sự kiện</li>
+            <li>Không gian Triều Châu, hướng <strong>premium, sạch sẽ, nghệ thuật</strong></li>
+            <li>Tone màu: đỏ brand</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Ảnh bò tươi <strong>"dựng đứng"</strong>, các phần thịt hiếm (đầu rồng, lõi rùa)</li>
+            <li>Quầy bếp mở, đầu bếp thái, KH dùng bữa nhóm/gia đình vui vẻ</li>
+            <li>Các nước lẩu đặc trưng, đặc biệt <strong>lẩu hoàng kim trứng muối</strong></li>
+            <li>Há cảo tươi nặn tại bàn</li>
+            <li>Góc máy <strong>macro cận cảnh thớ thịt</strong>, đặc tả độ mềm, làn khói</li>
+            <li>Tone ấm + <strong>đèn neon hiện đại</strong> (vibe Hồng Kông)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">3.2</span>Tuyến content Viral</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>POV nhân viên, quản lý, bếp trưởng nhà hàng</li>
+            <li><strong>Tuyến so sánh với Haidilao</strong> — từng đạt 20M view</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>"Tiểu thịt tươi"</strong>: trai 6 múi nhảy nhót, nhúng bò cho khách</li>
+            <li>Múa cổ trang ở nhà hàng</li>
+            <li>Minigame ném phi tiêu trúng quà</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">3.3</span>Tuyến Storytelling</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Câu chuyện <strong>10 năm nghiên cứu</strong> tìm món bò ngon nhất</li>
+            <li>Giá trị kết nối của lẩu Triều Châu trong XH hiện đại</li>
+            <li>Giá trị sức khỏe: thịt thái tay tươi trong ngày, thảo mộc Đông y, thủ công</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Câu chuyện <strong>"2 năm nghiên cứu, 5 tạ trứng muối"</strong> — tò mò + tin tưởng</li>
+            <li><strong>"Chỉ lấy 60kg thịt ngon nhất từ mỗi con bò"</strong> — tăng giá trị cảm nhận</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">3.4</span>Tuyến content Giáo dục khách hàng</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Hướng dẫn phân biệt phần thịt bò (u hoa, thăn ngoại, bắp hoa)</li>
+            <li>Cách thưởng thức từng phần để đạt vị ngon nhất</li>
+            <li>Nội dung <strong>mang tính chuyên gia, học thuật cao</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Cách thái thịt đúng, phân biệt thịt tươi/không tươi</li>
+            <li><strong>"Nghi thức ăn lẩu 3 bước"</strong>: nhúng 8 giây, chấm sốt sa tế Triều Châu tự pha, húp nước súp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis">
+      <div class="analysis-label">Phân tích — Edu content</div>
+      <p><strong>TL có nội dung chuyên sâu, học thuật — DNG có công thức dễ nhớ, dễ lan toả.</strong> "Nghi thức ăn lẩu 3 bước" của DNG là một <em>memorable mnemonic</em> mà khách có thể nhớ và kể lại. Trong khi đó, content edu của TL nặng kiến thức hơn nhưng khó nhớ — cần đóng gói lại theo dạng "ritual có tên" hoặc "công thức 3 bước" để dễ lan toả.</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">3.5</span>Tuyến content Tranh luận</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Ngoài campaign so sánh với Haidilao — <strong>gần như không sử dụng yếu tố tranh luận</strong></li>
+            <li>Giữ hình ảnh thương hiệu "sạch" và an toàn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Kích thích thảo luận: <strong>"khẳng định tiêu chuẩn vượt thị trường"</strong></li>
+            <li>"Ăn lẩu bò Triều Châu mà chấm gia vị truyền thống Việt Nam thì có mất gốc?"</li>
+            <li>"Lẩu bò tươi có thực sự tốt hơn lẩu bò đông lạnh?"</li>
+            <li>Nhưng <em>khá cẩn thận, chỉ so chất lượng/giá, không gây hấn trực tiếp</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">3.6</span>Vibe chung</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Chuyên nghiệp, sang trọng, uy tín</strong></li>
+            <li>"Sạch – tươi – tốt", value for money</li>
+            <li>Target: công sở/gia đình thu nhập trung cao, quan tâm chất lượng</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Casual dining gần gũi, vui, nhiều hoạt động</strong></li>
+            <li>Hậu thuẫn Golden Gate, mạnh giải trí và trend</li>
+            <li>Target: gia đình/văn phòng + <strong>giới trẻ mê đu trend</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert red">
+      <div class="alert-label">⚠ Tổng kết Content — Tian Long mạnh chiều sâu, yếu lan toả organic</div>
+      <p>Tian Long có asset content tốt hơn DNG về chiều sâu (storytelling 10 năm, edu chuyên gia, precedent viral 20M view). <strong>Nhưng DNG đang thắng ở 3 mặt</strong>: (1) content tại điểm bán tự lan toả nhờ trai đẹp/múa/game; (2) edu content đóng gói thành ritual dễ nhớ; (3) chủ động tạo tranh luận để kích thảo luận MXH.</p>
+    </div>
+  </div>
+
+  <!-- 04 SOCIAL CHANNELS -->
+  <div class="sec">
+    <div class="eyebrow">04 · Kênh Social</div>
+    <div class="sec-title">Hệ Thống Kênh Social &amp; Booking</div>
+    <div class="sec-desc">So sánh chi tiết từng kênh: Facebook, TikTok, Website, Instagram, Zalo, Threads và báo chí.</div>
+
+    <div class="sub-title"><span class="sub-title-num">4.1</span>Facebook</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Tần suất:</strong> 3–4 bài/tuần</li>
+            <li>Hình ảnh món ăn đẹp, bài viết dài giới thiệu/educate, bài chấm tương tác, Ads chuyển đổi đặt bàn</li>
+            <li><strong>Livestream</strong> để KH check trực tiếp độ tươi và vận hành nhà hàng, giải đáp thắc mắc</li>
+            <li><strong>Booking:</strong> Page chuyên gia F&amp;B VN, page/group review ẩm thực (khi mở CN mới), page Mall đối tác</li>
+            <li>Thông điệp xuyên suốt: <strong>"Chuỗi lẩu bò tươi Triều Châu lớn nhất Việt Nam + Bò tươi thái tay"</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Tần suất:</strong> 3–4 bài/tuần, dày đặc khi có CTKM/mở CN mới</li>
+            <li>Nội dung đa dạng: <strong>meme, ảnh KH, video art, minigame tặng voucher</strong></li>
+            <li><em>Không có livestream như TL</em></li>
+            <li><strong>Booking:</strong> page/group review ẩm thực, page đối tác (Lotte Mall)</li>
+            <li>Thông điệp: <strong>"Lẩu bò tươi Triều Châu đáng thử nhất / nhất định phải thử"</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis">
+      <div class="analysis-label">Phân tích Facebook</div>
+      <p><strong>TL mạnh hơn DNG trên Facebook</strong>: livestream là điểm cộng lớn (DNG không có), booking đa dạng hơn (3 tuyến vs 2), thông điệp định vị mạnh hơn ("lớn nhất Việt Nam" — DNG không claim được vì nhỏ hơn về quy mô).</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.2</span>TikTok &amp; Reels</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Kênh official:</strong> chưa quá chú trọng, chủ yếu video art show kỹ năng đầu bếp, chất lượng thịt, reup video KOC</li>
+            <li><strong>Kênh nhân sự</strong> (chef, quản lý, nhân viên): dạng POV chân thật — <strong>update đều đặn hơn DNG</strong>, có video đạt <strong>500k – vài triệu views</strong></li>
+            <li><strong>Booking:</strong> "Chuỗi lẩu bò tươi Triều Châu lớn nhất Việt Nam", "Quán lẩu bò được so sánh với Haidilao"</li>
+            <li>Video booking: combo, quầy line miễn phí, quầy bếp mở, test đĩa thịt úp ngược không rơi, băng sa giữa bữa</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Kênh official + CN:</strong> có VJ xuyên suốt, công thức Q&amp;A, video art kỹ năng đầu bếp, tình huống hài, nhảy nhót bắt trend</li>
+            <li><strong>Kênh nhân sự</strong> (Chị đẹp bò tươi, Lão bò tươi, Chef A Lịch...): <strong>chưa viral, vài trăm follow</strong>, đăng không đều, view TB 100k–200k, <strong>like &lt;1k/bài</strong>, chưa có video bứt phá</li>
+            <li><strong>Booking:</strong> mới book 2 đợt (10–11/2025 và 3–4/2026), <strong>phủ HCM hơn HN</strong></li>
+            <li>Video booking: thịt bò tươi, há cảo thủ công, không gian, một số CN HN có <strong>trai đẹp nhảy/nhúng bò</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert green">
+      <div class="alert-label">✦ Tian Long thắng rõ trên TikTok</div>
+      <p>Kênh nhân sự TL có <strong>video đạt 500k – vài triệu view</strong>, trong khi DNG vẫn ở mức 100–200k và chưa có video viral lớn. TL có precedent viral (Haidilao 20M) — DNG chưa có. Đây là kênh TL đang dẫn đầu và <strong>cần tiếp tục đẩy mạnh để giữ khoảng cách</strong>.</p>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.3</span>Website</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Chuyên nghiệp, đầy đủ combo/menu chi tiết</strong></li>
+            <li>Đặt bàn online, danh sách chi nhánh rộng (hàng chục CS toàn quốc)</li>
+            <li>Tin tức, ưu đãi đầy đủ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Đơn giản hơn</strong>, tập trung giới thiệu concept</li>
+            <li>Nhấn mạnh thông điệp <strong>"tươi + giá rẻ từ 179k/người"</strong></li>
+            <li>Liên kết app Golden SpoonS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.4</span>Instagram</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Có kênh IG (SG lập và quản lý), đầu tư về thiết kế, chỉn chu nhận diện</li>
+            <li><em>Không phải kênh đẩy mạnh</em></li>
+            <li>Nội dung: CTKM, khai trương, hoạt động NH, video visual món, không gian</li>
+            <li>Booking: <em>không chủ trương</em>, KOC reup IG cá nhân là điều kiện tặng kèm trong gói TikTok/FB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Có kênh IG, đầu tư về thiết kế, chỉn chu nhận diện</li>
+            <li><em>Không phải kênh đẩy mạnh</em></li>
+            <li>Nội dung chủ yếu CTKM, show đu trend, visual món mới</li>
+            <li>Booking: <em>chưa thấy đẩy</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.5</span>Zalo</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Có <strong>Zalo OA</strong>, gửi ưu đãi hàng tuần qua tin nhắn</li>
+            <li>Booking: <em>không chủ trương</em>, chỉ là điều kiện tặng kèm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Có Zalo OA</li>
+            <li>Booking: <em>chưa thấy đẩy</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.6</span>Threads</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Có kênh Threads (SG lập) — chưa có bài tự đăng</li>
+            <li>Booking miền Nam: có cho dịp lớn (campaign collab <strong>Tian Long × Vinamilk</strong>)</li>
+            <li>Miền Bắc: chỉ là điều kiện tặng kèm KOC reup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Có Threads nhưng <strong>không đầu tư</strong>, chỉ reup từ FB</li>
+            <li>Chưa có độ phủ</li>
+            <li>Năm nay có booking KOC review Threads nhưng <strong>view thấp, ít like, ít tương tác</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title"><span class="sub-title-num">4.7</span>Báo chí, truyền hình</div>
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li><strong>Sở hữu 2 bài báo chuyên sâu dạng case study</strong> trên Cafef, Vietnamnet — báo uy tín hàng đầu về kinh tế và công nghệ</li>
+            <li>Loạt bài booking chung cùng các brand Aladdin, bài về Mr Thuân</li>
+            <li>Thông điệp rõ: "Chuỗi lẩu bò tươi Triều Châu lớn nhất Việt Nam + thịt tươi thái tay tại quầy"</li>
+            <li><strong>Định vị "người dẫn đầu" qua thought-leadership trên báo kinh tế chính thống</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li>Chủ yếu xuất hiện <strong>gián tiếp qua hệ sinh thái Golden Gate</strong></li>
+            <li>Chỉ có 1 bài đề cập trên <strong>Gotit.vn</strong> (trang thương mại của GGG, không phải báo chí độc lập)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert green">
+      <div class="alert-label">✦ Tian Long thắng tuyệt đối ở báo chí — DNG quá yếu</div>
+      <p>Đây là khoảng cách lớn nhất giữa hai brand trên một mặt trận: <strong>TL có thought-leadership trên báo uy tín, DNG gần như không có gì độc lập</strong>. Cần khai thác mạnh hơn nữa kênh này — đặc biệt cho định vị "lớn nhất Việt Nam" và brand authority B2B.</p>
+    </div>
+  </div>
+
+  <!-- 05 SCORE -->
+  <div class="sec">
+    <div class="eyebrow">05 · Tổng kết</div>
+    <div class="sec-title">Bảng Điểm Marketing Tổng Hợp</div>
+    <div class="sec-desc">Thang điểm 10 — dựa trên dữ liệu so sánh chi tiết thực tế từ 4 hạng mục.</div>
+
+    <div class="score-wrap">
+      <div class="score-head">
+        <div class="score-head-tl">Tian Long</div>
+        <div class="score-head-center">Hạng mục</div>
+        <div class="score-head-dng">Dao Niu Guo</div>
+      </div>
+
+      <div class="score-row">
+        <div class="score-tl">
+          <div class="score-bar tl" style="width:75%"></div>
+          <span class="score-num tl">7.5</span>
+          <span class="win-flag tl-w">Dẫn</span>
+        </div>
+        <div class="score-mid">Định vị<br>Brand</div>
+        <div class="score-dng">
+          <span class="score-num dng">6.5</span>
+          <div class="score-bar dng" style="width:65%"></div>
+        </div>
+      </div>
+
+      <div class="score-row">
+        <div class="score-tl">
+          <div class="score-bar tl" style="width:62%"></div>
+          <span class="score-num tl">6.2</span>
+          <span class="win-flag tie">Sát</span>
+        </div>
+        <div class="score-mid">Brand<br>Experience</div>
+        <div class="score-dng">
+          <span class="score-num dng">7.0</span>
+          <div class="score-bar dng" style="width:70%"></div>
+          <span class="win-flag dng-w">Dẫn</span>
+        </div>
+      </div>
+
+      <div class="score-row">
+        <div class="score-tl">
+          <div class="score-bar tl" style="width:65%"></div>
+          <span class="score-num tl">6.5</span>
+          <span class="win-flag tie">Sát</span>
+        </div>
+        <div class="score-mid">Ưu đãi<br>Promotions</div>
+        <div class="score-dng">
+          <span class="score-num dng">7.2</span>
+          <div class="score-bar dng" style="width:72%"></div>
+          <span class="win-flag dng-w">Dẫn</span>
+        </div>
+      </div>
+
+      <div class="score-row">
+        <div class="score-tl">
+          <div class="score-bar tl" style="width:68%"></div>
+          <span class="score-num tl">6.8</span>
+          <span class="win-flag tie">Sát</span>
+        </div>
+        <div class="score-mid">Content<br>Strategy</div>
+        <div class="score-dng">
+          <span class="score-num dng">7.0</span>
+          <div class="score-bar dng" style="width:70%"></div>
+          <span class="win-flag dng-w">Dẫn</span>
+        </div>
+      </div>
+
+      <div class="score-row">
+        <div class="score-tl">
+          <div class="score-bar tl" style="width:78%"></div>
+          <span class="score-num tl">7.8</span>
+          <span class="win-flag tl-w">Dẫn</span>
+        </div>
+        <div class="score-mid">Kênh Social<br>&amp; Booking</div>
+        <div class="score-dng">
+          <span class="score-num dng">5.8</span>
+          <div class="score-bar dng" style="width:58%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-card">
+        <div class="cmp-head tl">Tian Long — Điểm mạnh cần giữ &amp; khai thác</div>
+        <div class="cmp-body tl">
+          <ul>
+            <li>Định vị "Gu Sành" sắc nét, storytelling sâu (10 năm nghiên cứu)</li>
+            <li><strong>Video TikTok đạt 500k–vài triệu view</strong> — DNG chỉ 100–200k</li>
+            <li>2 bài báo case study Cafef/Vietnamnet — DNG không có</li>
+            <li>Livestream FB — DNG không có</li>
+            <li>Edu content chuyên sâu (phân biệt phần thịt)</li>
+            <li>Precedent viral 20M view (Haidilao)</li>
+            <li>Booking đa kênh, đa tuyến (chuyên gia + review + Mall)</li>
+            <li>Collab brand lớn (Tian Long × Vinamilk)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-head dng">Dao Niu Guo — Điểm mạnh cần đối phó</div>
+        <div class="cmp-body dng">
+          <ul>
+            <li><strong>Gamification mạnh tại điểm bán</strong>: phi tiêu, bốc thăm, oẳn tù tì</li>
+            <li><strong>Entertainment factor</strong>: trai 6 múi nhúng bò, múa cổ trang</li>
+            <li>Edu content đóng gói thành <strong>ritual dễ nhớ</strong> ("3 bước ăn lẩu")</li>
+            <li>Chủ động tạo <strong>tranh luận MXH</strong> kích thảo luận</li>
+            <li>Há cảo nặn tại bàn — content sống</li>
+            <li>Chồng coupon Golden Gate + Golden SpoonS + GotIt</li>
+            <li>Vibe vui, trend, thu hút giới trẻ tốt hơn TL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FINAL VERDICT -->
+<div class="final">
+  <div class="wrap">
+    <div class="eyebrow" style="color:rgba(255,255,255,.25)">Điểm tổng hợp 5 hạng mục</div>
+    <div class="final-grid">
+      <div class="final-brand">
+        <div class="final-label tl">Tian Long</div>
+        <div class="final-big tl">7.0</div>
+        <div class="final-of">/ 10 điểm</div>
+        <div class="final-wins">
+          <span class="fw tw">Brand ✦</span>
+          <span class="fw tw">Social ✦</span>
+          <span class="fw tt">Content ~</span>
+          <span class="fw tt">Experience ✗</span>
+          <span class="fw tt">Ưu đãi ✗</span>
+        </div>
+      </div>
+      <div class="final-vs">vs</div>
+      <div class="final-brand">
+        <div class="final-label dng">Dao Niu Guo</div>
+        <div class="final-big dng">6.70</div>
+        <div class="final-of">/ 10 điểm</div>
+        <div class="final-wins">
+          <span class="fw dw">Experience ✦</span>
+          <span class="fw dw">Ưu đãi ✦</span>
+          <span class="fw dw">Content ✦</span>
+          <span class="fw tt">Brand ✗</span>
+          <span class="fw tt">Social ✗</span>
+        </div>
+      </div>
+    </div>
+    <div class="final-note">
+      <strong>Tian Long đang dẫn nhẹ 0.3 điểm</strong> — nhưng dẫn ở những mặt trận khó copy (định vị, social), thua ở những mặt trận DNG mạnh sẵn (experience tại điểm bán, ưu đãi tích hợp). Khoảng cách đủ nhỏ để DNG vượt nếu TL không hành động. <strong>Con đường vượt trội tuyệt đối: nâng cấp Brand Experience theo tone Gu Sành (không copy phi tiêu), đóng gói edu content thành ritual có tên, và đẩy mạnh hơn nữa kênh TikTok + Báo chí — hai nơi TL đang dẫn rõ.</strong>
+    </div>
+  </div>
+</div>
+
+<!-- NEXT ACTIONS -->
+<div class="wrap">
+  <div class="sec">
+    <div class="eyebrow">06 · Next Actions</div>
+    <div class="sec-title">Kế Hoạch Hành Động Để Vượt Trội Dao Niu Guo</div>
+    <div class="sec-desc">
+      <span class="pill pill-red">P1 Tuần 1–2</span>
+      <span class="pill pill-amber">P2 Tháng 1</span>
+      <span class="pill pill-green">P3 Tháng 2–3</span>
+    </div>
+
+    <!-- A. BRAND EXPERIENCE -->
+    <div class="cl-group">
+      <div class="cl-group-title">A — Brand Experience (Nâng cấp ngay — đây là khoảng cách lớn nhất)</div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Thiết kế "Ritual Gu Sành" thay thế cho gamification kiểu DNG</div>
+          <div class="cl-detail">Không copy phi tiêu/oẳn tù tì (phá vỡ premium). Thay vào đó: thiết kế ritual mở đầu bữa ăn — nhân viên giới thiệu 3 vị thảo mộc tuần này, cách nhúng từng phần bò, nhiệt độ chuẩn. 60 giây, có script, có ánh sáng spotlight nồi lẩu. Tạo "khoảnh khắc đáng quay" theo tone Gu Sành — không bình dân hoá.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Marketing + Ops · Tuần 2</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Khôi phục lại gamification — nhưng theo tone Gu Sành</div>
+          <div class="cl-detail">TL đã bỏ "Vòng quay bò tươi". Thiết kế lại theo chiều sâu hơn: ví dụ "Bốc thăm trải nghiệm Thượng Gu" — phần thưởng không phải đĩa bò 119k mà là trải nghiệm cao cấp (set thử món hiếm, gặp đầu bếp, được pha sốt riêng). Tần suất thấp hơn DNG (không phải mỗi nhóm) nhưng giá trị cao hơn, gây tò mò hơn.</div>
+          <div class="cl-meta"><span class="p-badge p2">P2</span><span class="cl-who">Owner: Marketing · Tháng 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Tạo "Wall of 36 Herbs" — visual asset tại nhà hàng</div>
+          <div class="cl-detail">Một mảng tường trưng bày 36 vị thảo mộc: từng lọ thủy tinh, tên, công dụng Đông y. Vừa làm storytelling không lời vừa là background chụp ảnh. DNG không có asset này. Pilot tại 2–3 flagship HN trước.</div>
+          <div class="cl-meta"><span class="p-badge p3">P3</span><span class="cl-who">Owner: Ops + Design · Tháng 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. CONTENT -->
+    <div class="cl-group">
+      <div class="cl-group-title">B — Content (Đóng gói lại để dễ lan toả, không thay đổi chất lượng)</div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Đóng gói edu content thành "Ritual có tên" để dễ nhớ</div>
+          <div class="cl-detail">DNG có "Nghi thức ăn lẩu 3 bước" — TL phải có version sắc hơn. Ví dụ: <strong>"Quy tắc 3-6-9 của Dân Sành"</strong> (3 giây nhúng phần này, 6 giây phần kia, 9 phút hoàn thành 1 nồi đúng nghĩa). Hoặc <strong>"5 vị — 5 phần — 5 cách thưởng"</strong>. Phải có công thức dễ nhớ để khách kể lại được.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Content + R&amp;D · Tuần 2</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Tái kích hoạt tuyến tranh luận — góc mới sau Haidilao</div>
+          <div class="cl-detail">DNG đang chủ động tạo tranh luận MXH, TL gần như bỏ trống mặt này từ sau campaign Haidilao. Tái kích hoạt với góc mới: <strong>"Bạn trả tiền cho bò hay cho dịch vụ?"</strong> hoặc <strong>"Lẩu bò 'thái tay tại quầy' — có bao nhiêu nhà hàng thật sự thái tay 100%?"</strong>. Không cần mention DNG, nhưng đặt câu hỏi khiến cả ngành phải trả lời.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Content team · Tuần 2</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Sản xuất hero TikTok series "4 giờ sáng tại Tian Long"</div>
+          <div class="cl-detail">Theo chân đầu bếp từ nhập bò 4h sáng đến khi khách đầu tiên ăn. Raw, không hiệu ứng. Khai thác lợi thế thủ công authentic mà DNG (casual dining) khó làm bằng tone đó. 3 video ngắn 30–60s, đăng cách 1 tuần.</div>
+          <div class="cl-meta"><span class="p-badge p2">P2</span><span class="cl-who">Owner: Content team · Tháng 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Series "36 vị thảo mộc" — reveal từng vị theo tuần</div>
+          <div class="cl-detail">Asset độc quyền của TL mà DNG không thể có. Mỗi tuần reveal 1–2 vị: tên, công dụng Đông y, lý do chọn. Tạo lý do follow liên tục. Tốt cho FB infographic + TikTok short video. Đây cũng là content edu nâng cấp hơn DNG (họ chỉ nói chung "thảo mộc", TL kể tên từng vị).</div>
+          <div class="cl-meta"><span class="p-badge p3">P3</span><span class="cl-who">Owner: Content + R&amp;D · Tháng 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C. PROMOTIONS -->
+    <div class="cl-group">
+      <div class="cl-group-title">C — Promotions &amp; Loyalty</div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Push Aladdin Reward app: campaign kích hoạt user download &amp; first-use</div>
+          <div class="cl-detail">DNG dùng Golden SpoonS để chồng coupon — lợi thế quan trọng. TL có Aladdin Reward nhưng user base còn thấp. Cần campaign kích hoạt: welcome bonus đủ hấp dẫn để download (không phải 10k mà phải bằng 1 phần ăn), QR tại bàn, staff chủ động giới thiệu. Mục tiêu MAU rõ ràng trong 30 ngày.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Marketing + Tech · Tuần 2</span></div>
+        </div>
+      </div>
+
+
+    <!-- D. SOCIAL CHANNELS -->
+    <div class="cl-group">
+      <div class="cl-group-title">D — Kênh Social (Giữ và mở rộng lợi thế đang có)</div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Spark Ads boost video TikTok đang viral của kênh nhân sự</div>
+          <div class="cl-detail">TL đã có video 500k–vài triệu view trên kênh nhân sự. Đây là lợi thế lớn so với DNG (chỉ 100–200k). Spark Ads boost những video tốt nhất, target HN + HCM 25–45 → kích thuật toán gợi ý cụm content TL trên FYP. Đẩy mạnh khoảng cách trước khi DNG kịp catch up.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Digital team · Tuần 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Monitor &amp; nurture KOC tự phát trong 24h</div>
+          <div class="cl-detail">Assign 1 người monitor TikTok + FB hàng ngày: KOC nào review TL → brand like + comment trong 24h + reshare story + Spark Ads nếu chất lượng. Tốc độ phản ứng quyết định viral. Quy trình 0 chi phí, hiệu quả cao.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Social media · Tuần 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Đẩy mạnh báo chí PR — hạng mục TL đang dẫn tuyệt đối</div>
+          <div class="cl-detail">DNG gần như không có mặt trên báo chí độc lập. TL có 2 case study Cafef/Vietnamnet — tiếp tục đầu tư mặt trận này. Mục tiêu 4 bài báo lớn/quý về: quy mô, story chef, mở rộng chuỗi, hợp tác lớn. Củng cố thought-leadership "lớn nhất Việt Nam".</div>
+          <div class="cl-meta"><span class="p-badge p2">P2</span><span class="cl-who">Owner: PR + Marketing · Tháng 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Mở rộng livestream Facebook — thêm tần suất, thêm format</div>
+          <div class="cl-detail">Livestream là lợi thế TL có mà DNG không có. Tăng tần suất từ ad-hoc lên cố định 1 buổi/tuần. Format: Chef talk, Q&amp;A về thịt, behind-the-scenes nhập bò. Lưu lại làm clip ngắn cho TikTok/Reels.</div>
+          <div class="cl-meta"><span class="p-badge p2">P2</span><span class="cl-who">Owner: Content team · Tháng 1</span></div>
+        </div>
+      </div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">Đầu tư kênh Threads — DNG yếu, đang là khoảng trắng</div>
+          <div class="cl-detail">Cả TL và DNG đều yếu Threads. Đầu tư đều đặn với content text-first phù hợp Threads (storytelling ngắn, opinion về ẩm thực). Chiếm trước khi DNG kịp đầu tư.</div>
+          <div class="cl-meta"><span class="p-badge p3">P3</span><span class="cl-who">Owner: Content team · Tháng 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E. STRATEGIC -->
+    <div class="cl-group">
+      <div class="cl-group-title">E — Nguyên tắc chiến lược</div>
+
+      <div class="cl-item">
+        <div class="cb"></div>
+        <div class="cl-body">
+          <div class="cl-action">ĐẨY NHANH VÀ MẠNH chiếm lĩnh key "SỐ 1 VỀ THỊT": cần làm việc để có được những source quay đắt giá về nguồn gốc, trang trại, quy trình nhập... và biến thành chiến dịch truyền thông bài bản.</div>
+          <div class="cl-action">KHÔNG cố copy DNG ở những điểm họ mạnh — chọn chiến lược sâu, dẫn đầu</div>
+          <div class="cl-detail">Đừng làm phi tiêu, đừng tuyển trai 6 múi nhảy — sẽ phá vỡ tone Gu Sành. Thay vào đó nâng cấp những gì TL đã có thành "có thể quay được" theo tone premium. TL thắng bằng độ sắc nét, không bằng entertainment thô.</div>
+          <div class="cl-meta"><span class="p-badge p1">P1</span><span class="cl-who">Owner: Leadership · Ongoing</span></div>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+<div style="background:var(--ink);color:rgba(255,255,255,.2);text-align:center;padding:22px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em">
+  ALADDIN JSC · MARKETING INTELLIGENCE · THÁNG 5/2026 · CONFIDENTIAL · FINAL
+</div>
+
+</body>
+</html>
